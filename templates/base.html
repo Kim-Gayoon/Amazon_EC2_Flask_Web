@@ -6,7 +6,7 @@
     <title>{% block title %}CK World{% endblock %}</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/earth.png')}}">   <!-- favicon.ico -->
     <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
     {% block additional_head %}{% endblock %}
@@ -109,7 +109,7 @@
                         <a class="nav-link dropdown-toggle {% if menu.cr %}active{% endif %}" 
                            data-toggle="dropdown" href="#">크롤링</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/crawling/food">맛집(식신)</a>
+                            <!-- <a class="dropdown-item" href="/crawling/food">맛집(식신)</a> -->
                             <a class="dropdown-item" href="/crawling/music">음악(지니)-BS</a>
                             <a class="dropdown-item" href="/crawling/music_jquery">음악(지니)-DataTables</a>
                             <a class="dropdown-item" href="/crawling/book">도서(인터파크)</a>
